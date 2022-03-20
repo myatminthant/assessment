@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productcell" id="gTV-IL-0wX" customClass="ProductCell" customModule="assessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="238"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="238"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AOP-qs-OH0">
+                        <rect key="frame" x="0.0" y="0.0" width="224" height="238"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8E2-hp-Kx4">
+                                <rect key="frame" x="15" y="15" width="194" height="208"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ie2-9I-EBs">
+                                        <rect key="frame" x="0.0" y="0.0" width="194" height="30"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sid-X9-jBC">
+                                                <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMI-ER-3Ce">
+                                                <rect key="frame" x="164" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Iys-RB-LiC"/>
+                                                    <constraint firstAttribute="width" constant="30" id="fOc-lb-tZr"/>
+                                                </constraints>
+                                                <state key="normal" image="fav"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Y0v-Yg-ALI">
+                                        <rect key="frame" x="0.0" y="38" width="194" height="132"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kisspng-air-jordan-shoe-sneakers-nike-jordan-spizike-air-jordan-basketball-shoes-5a7bfa0d76e378 1" translatesAutoresizingMaskIntoConstraints="NO" id="Xfg-ZB-jar">
+                                                <rect key="frame" x="0.0" y="0.0" width="194" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="2ts-yg-qQ8"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Xa-kY-wP2">
+                                                <rect key="frame" x="0.0" y="105" width="194" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <color key="textColor" red="0.1529411765" green="0.12941176469999999" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s2f-he-UZG">
+                                        <rect key="frame" x="0.0" y="178" width="194" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10O-RO-p9M">
+                                                <rect key="frame" x="0.0" y="0.0" width="164" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQs-qh-9qh">
+                                                <rect key="frame" x="164" y="0.0" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="KdV-6r-Rnc"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Z0b-Dm-gev"/>
+                                                </constraints>
+                                                <state key="normal" image="add"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.93725490196078431" blue="0.96470588235294119" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="8E2-hp-Kx4" firstAttribute="top" secondItem="AOP-qs-OH0" secondAttribute="top" constant="15" id="LTp-cm-lP5"/>
+                            <constraint firstAttribute="trailing" secondItem="8E2-hp-Kx4" secondAttribute="trailing" constant="15" id="N4R-X4-StG"/>
+                            <constraint firstAttribute="bottom" secondItem="8E2-hp-Kx4" secondAttribute="bottom" constant="15" id="cAy-pa-qpk"/>
+                            <constraint firstItem="8E2-hp-Kx4" firstAttribute="leading" secondItem="AOP-qs-OH0" secondAttribute="leading" constant="15" id="xOg-3V-zBb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="AOP-qs-OH0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WSg-xI-sMA"/>
+                <constraint firstItem="AOP-qs-OH0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yys-Ti-pSp"/>
+                <constraint firstAttribute="trailing" secondItem="AOP-qs-OH0" secondAttribute="trailing" id="zO4-tg-Ppx"/>
+                <constraint firstAttribute="bottom" secondItem="AOP-qs-OH0" secondAttribute="bottom" id="zUF-c9-gED"/>
+            </constraints>
+            <size key="customSize" width="224" height="238"/>
+            <connections>
+                <outlet property="bgView" destination="AOP-qs-OH0" id="0Z9-uV-Ld8"/>
+                <outlet property="imageView" destination="Xfg-ZB-jar" id="xHv-7Y-i2G"/>
+                <outlet property="priceLabel" destination="10O-RO-p9M" id="l8u-1O-AHo"/>
+                <outlet property="titleLabel" destination="1Xa-kY-wP2" id="jwE-SE-W6P"/>
+            </connections>
+            <point key="canvasLocation" x="257.97101449275362" y="151.33928571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="add" width="24.5" height="24.5"/>
+        <image name="fav" width="16" height="15"/>
+        <image name="kisspng-air-jordan-shoe-sneakers-nike-jordan-spizike-air-jordan-basketball-shoes-5a7bfa0d76e378 1" width="142" height="115"/>
+    </resources>
+</document>

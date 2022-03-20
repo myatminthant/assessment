@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="productlistheaderview" id="U6b-Vx-4bR" customClass="ProductHeaderView" customModule="assessment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yzy-pR-aXs">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TlQ-SJ-bpH">
+                            <rect key="frame" x="10" y="0.0" width="300" height="108"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71Q-wc-ivE">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="68"/>
+                                    <attributedString key="attributedText">
+                                        <fragment content="Hello Kante">
+                                            <attributes>
+                                                <color key="NSColor" red="0.15294117647058825" green="0.12941176470588234" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=", ">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" metaFont="system" size="17"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="What fruit salad combo do you want today?">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="17" name="HelveticaNeue-Medium"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search for fruit salad combo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BJU-KP-mML">
+                                    <rect key="frame" x="0.0" y="68" width="300" height="40"/>
+                                    <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="wOi-J0-gEH"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="TlQ-SJ-bpH" secondAttribute="bottom" id="7mm-jl-qvf"/>
+                        <constraint firstItem="TlQ-SJ-bpH" firstAttribute="top" secondItem="Yzy-pR-aXs" secondAttribute="top" id="Mlp-v3-CTM"/>
+                        <constraint firstItem="TlQ-SJ-bpH" firstAttribute="leading" secondItem="Yzy-pR-aXs" secondAttribute="leading" constant="10" id="l8w-uU-rAV"/>
+                        <constraint firstAttribute="trailing" secondItem="TlQ-SJ-bpH" secondAttribute="trailing" constant="10" id="r4F-LL-SD6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="Yzy-pR-aXs" secondAttribute="bottom" id="4yv-8e-L4p"/>
+                <constraint firstAttribute="trailing" secondItem="Yzy-pR-aXs" secondAttribute="trailing" id="Nch-9b-mhg"/>
+                <constraint firstItem="Yzy-pR-aXs" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="buH-pb-Uc5"/>
+                <constraint firstItem="Yzy-pR-aXs" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="iiA-1O-psf"/>
+            </constraints>
+            <connections>
+                <outlet property="searchField" destination="BJU-KP-mML" id="lba-Tm-FHN"/>
+                <outlet property="titleLabel" destination="71Q-wc-ivE" id="hvW-2x-J6N"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="103.125"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
